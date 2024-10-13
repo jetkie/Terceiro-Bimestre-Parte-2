@@ -1,0 +1,54 @@
+@import url("styles/header.css");
+@import url("styles/banner.css");
+@import url("styles/carrossel.css");
+@import url("styles/topicos.css");
+@import url("styles/contato.css");
+@import url("styles/rodapé.css");
+
+:root {
+    --cor-de-fundo: #F7F7F9; /* Cor pastel clara */
+    --branco: #FFFFFF;
+    --laranja: #FFB997; /* Laranja pastel */
+    --azul-degrade: linear-gradient(97.54deg, #A7BED3 35.49%, #C6E2E9 165.37%); /* Azul degrade pastel */
+    --fonte-principal: "Poppins";
+    --azul: #A7BED3; /* Azul pastel */
+    --fonte-secundario: "Josefin Sans";
+    --preto: #000000;
+    --cinza: #474646;
+    --cinza-claro: #858585;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* Adicionando estilos para deixar mais fofo */
+.header, .banner, .carrossel, .topicos, .contato, .rodape {
+    border-radius: 15px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.botões__ancora {
+    background-color: var(--laranja);
+    color: var(--branco);
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 1em 2.2em;
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Transição suave */
+}
+
+.botões__ancora:hover {
+    background-color: #FFC8A2; /* Laranja pastel mais claro */
+}
+
+.lista-menu__link {
+    color: var(--azul);
+    text-decoration: none;
+}
+
+.lista-menu__link:hover {
+    color: var(--laranja);
+}
